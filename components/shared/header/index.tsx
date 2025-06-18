@@ -3,10 +3,11 @@ import Image from "next/image";
 import { ShoppingCart, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
+import { ModeToggle } from "./mode-toggle";
 
 export default function Header() {
   return (
-    <header className="w-full bg-gradient-to-r from-blue-50 via-white to-pink-50 shadow-lg sticky top-0 z-50">
+    <header className="w-full shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-3">
           <Link href="/">
@@ -35,6 +36,7 @@ export default function Header() {
               <LogIn className="w-4 h-4" /> Sign In
             </Button>
           </Link>
+          <ModeToggle />
         </nav>
       </div>
     </header>

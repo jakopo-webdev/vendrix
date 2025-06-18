@@ -1,8 +1,6 @@
-import { Button } from "@/components/ui/button"
+"use client";
 
-export const metadata = {
-  title: "Home",
-};
+import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
