@@ -5,7 +5,7 @@ import { Menu } from "./menu";
 
 export default function Header() {
   return (
-    <header className="w-full shadow-lg sticky top-0 z-50">
+    <header className="w-full shadow-lg backdrop-blur-3xl sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-3">
           <Link href="/">
