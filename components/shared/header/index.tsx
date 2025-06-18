@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart, LogIn, Home } from "lucide-react";
+import { ShoppingCart, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
 
@@ -25,30 +25,13 @@ export default function Header() {
           </Link>
         </div>
         <nav className="flex items-center gap-2 sm:gap-4">
-          <Link href="/">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="flex items-center gap-1 px-3 hover:bg-blue-100/60 transition"
-            >
-              <Home className="w-4 h-4" /> Home
-            </Button>
-          </Link>
           <Link href="/cart">
-            <Button
-              variant="ghost"
-              size="sm"
-              className="flex items-center gap-1 px-3 hover:bg-pink-100/60 transition"
-            >
+            <Button variant="ghost">
               <ShoppingCart className="w-4 h-4" /> Cart
             </Button>
           </Link>
           <Link href="/sign-in">
-            <Button
-              variant="outline"
-              size="sm"
-              className="flex items-center gap-1 px-3 border-blue-500 text-blue-600 hover:bg-blue-50 transition"
-            >
+            <Button>
               <LogIn className="w-4 h-4" /> Sign In
             </Button>
           </Link>
