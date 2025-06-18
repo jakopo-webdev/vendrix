@@ -5,7 +5,7 @@ export default async function Home() {
   await delay(1000);
   return (
     <div>
-      <Button>Do not click me</Button>
+      <Button size={"lg"}>Do not click</Button>
     </div>
   )
 }

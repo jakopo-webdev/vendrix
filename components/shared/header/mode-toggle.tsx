@@ -20,12 +20,11 @@ export function ModeToggle() {
   return (
     <Button
       variant="ghost"
-      size="icon"
       aria-label="Toggle theme"
       onClick={() => setTheme(isDark ? "light" : "dark")}
       className="ml-2"
     >
-      {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+      {isDark ? <Sun className="!size-6" /> : <Moon className="!size-6" />}
     </Button>
   );
 }

@@ -1,9 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import { ShoppingCart, LogIn } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { APP_NAME } from "@/lib/constants";
-import { ModeToggle } from "./mode-toggle";
+import { Menu } from "./menu";
 
 export default function Header() {
   return (
@@ -25,19 +23,7 @@ export default function Header() {
             </span>
           </Link>
         </div>
-        <nav className="flex items-center gap-2 sm:gap-4">
-          <Link href="/cart">
-            <Button variant="ghost">
-              <ShoppingCart className="w-4 h-4" /> Cart
-            </Button>
-          </Link>
-          <Link href="/sign-in">
-            <Button>
-              <LogIn className="w-4 h-4" /> Sign In
-            </Button>
-          </Link>
-          <ModeToggle />
-        </nav>
+        <Menu />
       </div>
     </header>
   );
