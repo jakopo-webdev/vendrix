@@ -16,6 +16,7 @@ export default function Header() {
                 width={40}
                 height={40}
                 className="rounded-full border border-gray-200 shadow-sm"
+                priority={true}
               />
               <span className="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent drop-shadow-sm">
                 {APP_NAME}

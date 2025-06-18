@@ -25,6 +25,7 @@ export function ProductCard({ product }: ProductCardProps) {
           width={320}
           height={320}
           className="object-cover w-full h-48 rounded-t"
+          priority={true} // Use priority for the first image to improve loading performance
         />
       </CardHeader>
       <CardContent className="flex-1 flex flex-col p-4">
