@@ -1,3 +1,5 @@
+"use server";
+
 import { PrismaClient } from "@/lib/generated/prisma";
 import { toPlainObject } from "@/lib/utils";
 
