@@ -7,9 +7,9 @@ import {
   CardDescription,
   CardFooter,
 } from "@/components/ui/card";
+import type { Product } from "@/types";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function ProductCard({ product }: { product: any }) {
+export function ProductCard({ product }: { product: Product }) {
   // Convert price and rating to numbers for display
   const price =
     typeof product.price === "string"

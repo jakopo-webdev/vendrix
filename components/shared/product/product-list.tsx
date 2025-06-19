@@ -1,7 +1,7 @@
 import { ProductCard } from "./product-card";
+import type { Product } from "@/types";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-export function ProductList({ products }: { products: any[] }) {
+export function ProductList({ products }: { products: Product[] }) {
   if (!products || products.length === 0) {
     return (
       <div className="w-full text-center py-10 text-gray-500">
