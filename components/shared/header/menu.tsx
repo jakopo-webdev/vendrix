@@ -40,7 +40,7 @@ export function Menu() {
               </Link>
               <Link href="/sign-in">
                 <Button className="w-full justify-start mb-2">
-                  <LogIn /> Sign Inn
+                  <LogIn /> Sign In
                 </Button>
               </Link>
               <ModeToggle />
