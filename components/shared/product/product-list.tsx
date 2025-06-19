@@ -1,12 +1,12 @@
-import sampleData from "@/db/sample-data";
 import { ProductCard } from "./product-card";
 
-export function ProductList() {
-  const products = sampleData.products;
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function ProductList({ products }: { products: any[] }) {
   if (!products || products.length === 0) {
     return (
-      <div className="w-full text-center py-10 text-gray-500">No products available.</div>
+      <div className="w-full text-center py-10 text-gray-500">
+        No products available.
+      </div>
     );
   }
 
