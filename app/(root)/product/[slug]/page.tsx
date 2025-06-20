@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import ProductImages from "@/components/product/product-images";
 import Link from "next/link";
 
-interface ProductPageProps {
-  params: { slug: string };
-}
-
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const resolvedParams = await params;
   const product = await getProductBySlug(resolvedParams.slug);
   if (!product) return notFound();
