@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Card,
   CardContent,
@@ -22,16 +23,23 @@ export function ProductCard({ product }: { product: Product }) {
 
   return (
     <Card className="flex flex-col h-full">
-      <CardHeader className="p-0">
-        <Image
-          src={product.images[0]}
-          alt={product.name}
-          width={320}
-          height={320}
-          className="object-cover w-full h-48 rounded-t"
-          priority={true} // Use priority for the first image to improve loading performance
-        />
-      </CardHeader>
+      <Link
+        href={`/product/${product.slug}`}
+        tabIndex={0}
+        aria-label={`View details for ${product.name}`}
+        className="block"
+      >
+        <CardHeader className="p-0 cursor-pointer">
+          <Image
+            src={product.images[0]}
+            alt={product.name}
+            width={320}
+            height={320}
+            className="object-cover w-full h-48 rounded-t"
+            priority={true} // Use priority for the first image to improve loading performance
+          />
+        </CardHeader>
+      </Link>
       <CardContent className="flex-1 flex flex-col p-4">
         <CardTitle className="text-lg font-semibold mb-1">
           {product.name}
