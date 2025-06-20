@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { neonConfig } from "@neondatabase/serverless";
 import { PrismaNeon } from "@prisma/adapter-neon";
-import { PrismaClient } from "@/lib/generated/prisma";
+import { PrismaClient } from "../lib/generated/prisma"; // Adjust the import path as necessary
 import ws from "ws";
 
 // Sets up WebSocket connections, which enables Neon to use WebSocket communication.
